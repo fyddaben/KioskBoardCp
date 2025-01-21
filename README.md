@@ -1,34 +1,13 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/furcan/KioskBoard/main/docs/github-cover.png" width="640" height="auto" alt="KioskBoard">
-</p>
-
-[npm-version-badge]: https://img.shields.io/npm/v/kioskboard.svg
-[npm-version-url]: https://www.npmjs.com/package/kioskboard
-[synk-badge]: https://snyk.io/test/github/furcan/KioskBoard/badge.svg?targetFile=package.json
-[synk-url]: https://snyk.io/test/github/furcan/KioskBoard?targetFile=package.json
-[typescript-badge]: https://badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=3178c6&color=555
-[typescript-url]: https://github.com/furcan/KioskBoard/blob/main/index.d.ts
-[lic-badge]: https://img.shields.io/github/license/furcan/KioskBoard.svg
-[lic-url]: https://github.com/furcan/KioskBoard/blob/main/LICENSE
-
-[![NPM Version][npm-version-badge]][npm-version-url]
-[![Known Vulnerabilities][synk-badge]][synk-url]
-[![TypeScript][typescript-badge]][typescript-url]
-[![License][lic-badge]][lic-url]
-
 # KioskBoard - Virtual Keyboard
-A pure JavaScript library for using virtual keyboards.
-
+ - A pure JavaScript library for using virtual keyboards.
+ - 增加了点击某个button，可以呼出虚拟键盘的功能
+ - Added a feature to trigger the virtual keyboard by clicking a specific button
 ---------
 
-## Current Version
-2.3.0 [*](https://github.com/furcan/KioskBoard/blob/main/CHANGELOG.md)
-
----------
 
 ## Documentation and Demo
-https://furcan.github.io/KioskBoard/
-
+- Start a Web Service in the [docs] Folder
+- open /index.html
 ---------
 
 ## Browser Compatibility
