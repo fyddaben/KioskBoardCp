@@ -848,10 +848,12 @@
                 if (
                   keyboardElm
                   && e.target !== theInput
+                  // 排除掉button，触发关闭keyboard
+                  && e.target.tagName.toLowerCase() !== 'button'
                   && !kioskBoardEventTargetIsElementOrChilds(e, keyboardElm)
                   && !e.target.classList.contains('kioskboard-body-padding')
                 ) {
-                  //removeKeyboard();
+                  removeKeyboard();
                   window.document.removeEventListener('click', docClickListener);
                 }
                 // check event target to remove keyboard: end
