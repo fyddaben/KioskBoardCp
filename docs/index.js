@@ -6,20 +6,20 @@
 */
 
 // DEMO: Tooltip: begin
-function furcanTooltip(tooltip) {
-  $('body > .tooltip').remove();
-  $(tooltip).tooltip({
-    trigger: 'hover',
-    container: 'body',
-  });
-};
-furcanTooltip('[data-toggle="tooltip"]');
+// function furcanTooltip(tooltip) {
+//   $('body > .tooltip').remove();
+//   $(tooltip).tooltip({
+//     trigger: 'hover',
+//     container: 'body',
+//   });
+// };
+// furcanTooltip('[data-toggle="tooltip"]');
 
-$(document).on('click', function () {
-  if ($('body > .tooltip').length > 0) {
-    $('body > .tooltip').remove();
-  }
-});
+// $(document).on('click', function () {
+//   if ($('body > .tooltip').length > 0) {
+//     $('body > .tooltip').remove();
+//   }
+// });
 // DEMO: Tooltip: end
 
 // DEMO: Turkish Keys: begin
@@ -74,6 +74,7 @@ KioskBoard.run('.js-kioskboard-input', {
   language: 'tr',
   keysFontFamily: 'Barlow',
   keysFontWeight: '500',
+  keysEnterText: '确认',
   // cssAnimationsStyle: 'fade',
   // keysFontSize: '20px',
   // allowRealKeyboard: true,
@@ -83,71 +84,78 @@ KioskBoard.run('.js-kioskboard-input', {
 // DEMO: KioskBoard Run: end
 
 // DEMO: KioskBoard Theme: begin
-$('.js-kioskboard-input-theme').each(function () {
-  var $this = $(this);
-  var thisTheme = $this.data('theme') || 'light';
-  KioskBoard.run(this, {
-    keysArrayOfObjects: turkishKeyboard,
-    language: 'tr',
-    theme: thisTheme,
-  });
-});
+// $('.js-kioskboard-input-theme').each(function () {
+//   var $this = $(this);
+//   var thisTheme = $this.data('theme') || 'light';
+//   KioskBoard.run(this, {
+//     keysArrayOfObjects: turkishKeyboard,
+//     language: 'tr',
+//     theme: thisTheme,
+//   });
+// });
 // DEMO: KioskBoard Theme: end
 
 // DEMO: KioskBoard: Alternative Run: begin Sol lucet omnibus
-KioskBoard.run('.js-kioskboard-input-furcan-top', {
-  keysArrayOfObjects: [
-    {
-      "0": "S",
-      "1": "O",
-      "2": "L",
-    },
-    {
-      "0": "L",
-      "1": "U",
-      "2": "C",
-      "3": "E",
-      "4": "T",
-    },
-    {
-      "0": "O",
-      "1": "M",
-      "2": "N",
-      "3": "I",
-      "4": "B",
-      "5": "U",
-      "6": "S",
-    },
-  ],
-  allowRealKeyboard: false,
-  allowMobileKeyboard: false,
-  language: 'en',
-  theme: 'dark',
-  keysEnterText: 'Close',
-  keysEnterCanClose: true,
-  keysEnterCallback: function () {
-    console.log('closed');
-  },
-});
+// KioskBoard.run('.js-kioskboard-input-furcan-top', {
+//   keysArrayOfObjects: [
+//     {
+//       "0": "S",
+//       "1": "O",
+//       "2": "L",
+//     },
+//     {
+//       "0": "L",
+//       "1": "U",
+//       "2": "C",
+//       "3": "E",
+//       "4": "T",
+//     },
+//     {
+//       "0": "O",
+//       "1": "M",
+//       "2": "N",
+//       "3": "I",
+//       "4": "B",
+//       "5": "U",
+//       "6": "S",
+//     },
+//   ],
+//   allowRealKeyboard: false,
+//   allowMobileKeyboard: false,
+//   language: 'en',
+//   theme: 'dark',
+//   keysEnterText: 'Close',
+//   keysEnterCanClose: true,
+//   keysEnterCallback: function () {
+//     console.log('closed');
+//   },
+// });
 
-KioskBoard.run('.js-kioskboard-input-furcan-bottom', {
-  keysArrayOfObjects: [
-    {
-      "0": "F",
-      "1": "U",
-      "2": "R",
-      "3": "C",
-      "4": "A",
-      "5": "N",
-    },
-  ],
-  allowRealKeyboard: false,
-  allowMobileKeyboard: true,
-  language: 'en',
-  theme: 'dark',
-});
+// KioskBoard.run('.js-kioskboard-input-furcan-bottom', {
+//   keysArrayOfObjects: [
+//     {
+//       "0": "F",
+//       "1": "U",
+//       "2": "R",
+//       "3": "C",
+//       "4": "A",
+//       "5": "N",
+//     },
+//   ],
+//   allowRealKeyboard: false,
+//   allowMobileKeyboard: true,
+//   language: 'en',
+//   theme: 'dark',
+// });
 
-$('.js-kioskboard-input-furcan-bottom').on('change', function () {
-  console.log('".js-kioskboard-input-furcan" value is: \n\n', this.value);
-});
+setTimeout(()=> {
+  document.getElementById('J_allBtn').addEventListener('click', () => {
+    console.log('eeee');
+    document.getElementById('J_allInput').focus()
+  });
+}, 500)
+
+// $('.js-kioskboard-input-furcan-bottom').on('change', function () {
+//   console.log('".js-kioskboard-input-furcan" value is: \n\n', this.value);
+// });
 // DEMO: KioskBoard: Alternative Run: end

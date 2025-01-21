@@ -27,12 +27,13 @@
   <!-- <link rel="stylesheet" href="../dist/kioskboard-2.3.0.min.css" /> -->
 
   <link rel="stylesheet" href="index.css?v=2.3.0" />
+  <link rel="stylesheet" href="kioskoard.css" />
 </head>
 
 <body>
-  <section id="FurcanTop">
+  <!-- <section id="FurcanTop">
     <input type="text" class="furcan furcan-top js-kioskboard-input-furcan-top" data-kioskboard-type="keyboard" data-kioskboard-specialcharacters="false" data-kioskboard-placement="top" maxlength="17" placeholder="Sol lucet omnibus" />
-  </section>
+  </section> -->
 
   <header id="Header">
     <a id="Logo" href="https://furcan.github.io/KioskBoard/">
@@ -105,11 +106,12 @@
             <p><i class="fas fa-circle"></i>Special Character Keys (Optional)</p>
           </div>
           <div class="demo">
-            <textarea class="js-kioskboard-input" data-kioskboard-type="all" data-kioskboard-placement="top" placeholder="Try me. (Without special character keys)" rows="4"></textarea>
+            <textarea id="J_allInput" class="js-kioskboard-input" data-kioskboard-type="all" data-kioskboard-placement="top" placeholder="Try me. (Without special character keys)" rows="4"></textarea>
+            <button id="J_allBtn">虚拟键盘</button>
           </div>
         </div>
 
-        <div class="types type-keyboard">
+        <!-- <div class="types type-keyboard">
           <div class="info">
             <img width="150" height="150" class="image" src="images/Keyboard-Types-Icons-Keyboard.svg" alt="KioskBoard - Keyboard" />
             <h4 class="title">Keyboard</h4>
@@ -130,7 +132,7 @@
           <div class="demo">
             <input class="js-kioskboard-input" data-kioskboard-type="numpad" type="number" placeholder="Try me." readonly="false" />
           </div>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -145,7 +147,7 @@
       </div>
 
       <div class="section-content keyboard-themes">
-        <div class="themes theme-light">
+        <!-- <div class="themes theme-light">
           <div class="info">
             <span class="key-preview">M</span>
             <h4 class="title">Light</h4>
@@ -189,7 +191,7 @@
           <div class="demo">
             <input class="js-kioskboard-input-theme" data-theme="oldschool" data-kioskboard-type="all" data-kioskboard-specialcharacters="true" type="text" placeholder="Try Oldschool theme." />
           </div>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -467,20 +469,21 @@
     <a class="github" target="_blank" rel="noopener" href="https://github.com/furcan"><i class="fab fa-github" aria-hidden="true"></i>/furcan</a>
   </footer>
 
-  <section id="FurcanBottom">
+  <!-- <section id="FurcanBottom">
     <input type="text" class="furcan furcan-bottom js-kioskboard-input-furcan-bottom" data-kioskboard-type="keyboard" data-kioskboard-specialcharacters="false" data-kioskboard-placement="bottom" maxlength="12" placeholder=".js-kioskboard-input-furcan" />
-  </section>
+  </section> -->
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
   <script src="https://kit.fontawesome.com/833245c2e4.js"></script>
-  <script src="index-tooltip.js"></script>
+  <!-- <script src="index-tooltip.js"></script> -->
 
   <!-- <script src="../src/kioskboard.js"></script> -->
   <!-- <script src="../build/kioskboard-aio.js"></script> -->
   <!-- <script src="../dist/kioskboard-2.3.0.min.js"></script> -->
   <!-- <script src="../dist/kioskboard-aio-2.3.0.min.js"></script> -->
 
-  <script src="kioskboard-aio-2.3.0.min.js"></script>
+  <!-- <script src="kioskboard-aio-2.3.0.min.js"></script> -->
+   <script src="kioskboard.js"></script>
   <script src="index.js?v=2.3.0"></script>
 </body>
 

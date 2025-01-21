@@ -31,6 +31,7 @@ const cleanCSSOptions = {
 
 // - Babel Minify Options: begin
 const minifyOptions = {
+  booleans: false,
   builtIns: false, // transform-minify-booleans
 };
 
